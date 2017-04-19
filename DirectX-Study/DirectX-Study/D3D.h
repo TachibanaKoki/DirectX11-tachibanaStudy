@@ -1,10 +1,11 @@
-#pragma once
+#ifndef _D3DCLASS_H_
+#define _D3DCLASS_H_
 
 #pragma comment(lib, "dxgi.lib")
 #pragma comment(lib, "d3d11.lib")
 #pragma comment(lib, "d3dcompiler.lib")
 
-#include <dxgi.h>
+
 #include <d3d11.h>
 #include <DirectXMath.h>
 using namespace DirectX;
@@ -47,3 +48,4 @@ private:
 	XMMATRIX m_worldMatrix;
 	XMMATRIX m_orthoMatrix;
 };
+#endif
